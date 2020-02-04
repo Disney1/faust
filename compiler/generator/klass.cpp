@@ -102,7 +102,7 @@ void Klass::closeLoop(Tree sig)
     // cerr << endl;
 
     Tree S = symlist(sig);
-    // cerr << "CLOSE LOOP :" << l << " with symbols " << *S  << endl;
+    cerr << "CLOSE LOOP :" << l << " with symbols " << *S << endl;
     if (l->isEmpty() || fTopLoop->hasRecDependencyIn(S)) {
         // cout << " will absorb" << endl;
         // empty or dependent loop -> absorbed by enclosing one
