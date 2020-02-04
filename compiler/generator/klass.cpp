@@ -113,7 +113,7 @@ void Klass::closeLoop(Tree sig)
 {
     faustassert(fTopLoop);
 
-    if (fTopLoop->fBackwardLoopDependencies.size() == 0) {
+    if (true || (fTopLoop->fBackwardLoopDependencies.size() == 0)) {
         set<Loop*> L;
         set<Tree> V;
         listAllLoopProperties(sig, L, V);
