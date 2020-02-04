@@ -163,7 +163,7 @@ void Loop::addPostCode(const Statement& stmt)
 void Loop::absorb(Loop* l)
 {
     // the loops must have the same number of iterations
-    cerr << "Loop absorbtion : " << this << " absorb " << l << endl;
+    //cerr << "Loop absorbtion : " << this << " absorb " << l << endl;
     faustassert(fSize == l->fSize);
     fRecSymbolSet = setUnion(fRecSymbolSet, l->fRecSymbolSet);
 
